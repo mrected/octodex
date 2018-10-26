@@ -68,14 +68,7 @@ nav a:hover {
   justify-content: space-between;
   align-items: center;
   font-size: 16px;
-  border-bottom: solid 1px #cacaca;
-}
-
-.down-triangle {
-  position: relative;
-  left: 406px;
-  top: -23px;
-  font-size: 12px;
+  border-bottom: solid 1px #666;
 }
 
 .pic-number {
@@ -95,18 +88,8 @@ nav a:hover {
   height: 28px;
 }
 
-.down-arrow {
-  position: relative;
-  top: -17px;
-  right: -404px;
-  height: 0;
-  width: 0;
-  border: 8px solid transparent;
-  border-top-color: #cacaca;
-}
-
 .cats {
-  border: solid 1px #cacaca;
+  border: solid 1px #333;
   border-radius: 3px;
 }
 
@@ -116,7 +99,7 @@ nav a:hover {
 
 footer {
   min-height: 22px;
-  border-top: 1px solid #cacaca;
+  border-top: 1px solid #777;
   margin: 100px 10px 0;
   padding: 15px 0 20px;
   display: flex;
@@ -129,21 +112,13 @@ footer ul li {
   font-size: 12px;
 }
 
-footer ul a:active,
-footer ul a:visited,
-footer ul a:link {
+footer a:active,
+footer a:visited,
+footer a:link {
   color: #4183c4;
   text-decoration: none;
 }
 
 footer a:hover {
   text-decoration: underline;
-}
-
-.fa {
-  color: #ccc;
-}
-
-.fa:hover {
-  color: #bbb;
 }
