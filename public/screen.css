@@ -59,8 +59,23 @@ nav a:hover {
 }
 
 .picture-box {
-  max-width: 426px;
-  margin: 10px;
+  margin: 12px;
+}
+
+.picture-box::after {
+  content: '';
+  position: relative;
+  bottom: 44px;
+  left: 420px;
+  height: 0;
+  width: 0;
+  border: 8px solid transparent;
+  border-top-color: #cacaca;
+}
+
+.cats img {
+  margin: 9px;
+  width: 424px;
 }
 
 .caption {
@@ -69,13 +84,6 @@ nav a:hover {
   align-items: center;
   font-size: 16px;
   border-bottom: solid 1px #cacaca;
-}
-
-.down-triangle {
-  position: relative;
-  left: 406px;
-  top: -23px;
-  font-size: 12px;
 }
 
 .pic-number {
@@ -95,16 +103,6 @@ nav a:hover {
   height: 28px;
 }
 
-.down-arrow {
-  position: relative;
-  top: -17px;
-  right: -404px;
-  height: 0;
-  width: 0;
-  border: 8px solid transparent;
-  border-top-color: #cacaca;
-}
-
 .cats {
   border: solid 1px #cacaca;
   border-radius: 3px;
@@ -122,6 +120,20 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  color: #777;
+}
+
+footer > * {
+  width: 33.3%;
+}
+
+footer > a {
+  align-self: center;
+  text-align: center;
+}
+
+footer > p {
+  text-align: right;
 }
 
 footer ul li {
@@ -142,6 +154,8 @@ footer a:hover {
 
 .fa {
   color: #ccc;
+  position: relative;
+  margin: 0 auto;
 }
 
 .fa:hover {
