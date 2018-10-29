@@ -67,7 +67,14 @@ nav a:hover {
   margin: 12px;
 }
 
-.caption img {}
+.caption {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  border-bottom: solid 1px #cacaca;
+}
 
 .caption::before {
   content: '';
@@ -84,22 +91,14 @@ nav a:hover {
 
 .cats {
   max-width: 424px;
+  border: solid 1px #cacaca;
+  border-radius: 3px;
 }
 
 .cats img {
   padding: 9px;
   width: 100%;
   height: auto;
-  /* border: 1px saddlebrown solid; */
-}
-
-.caption {
-  display: flex;
-  position: relative;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 16px;
-  border-bottom: solid 1px #cacaca;
 }
 
 .pic-number {
@@ -118,25 +117,6 @@ nav a:hover {
   width: 28px;
   height: 28px;
   overflow: visible;
-}
-
-/* .caption img::before {
-  content: 'abcdefg';
-  font-size: 4rem;
-  color: orange;
-  position: relative;
-  top: 0;
-  left: 100px;
-  z-index: 1000;
-} */
-
-.cats {
-  border: solid 1px #cacaca;
-  border-radius: 3px;
-}
-
-.cats img {
-  max-width: 100%;
 }
 
 footer {
@@ -202,5 +182,15 @@ footer a:hover {
 
   nav li {
     padding: 0 5px;
+  }
+
+  .cats {
+    max-width: 100%;
+  }
+}
+
+@media(min-width:900px) {
+  .cats {
+    width: 424px;
   }
 }
